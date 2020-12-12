@@ -19,7 +19,7 @@ sheet_out = wb_out.active
 
 sheet_out['A1'].value = name
 
-for i in range(1,78):
-    sheet_out['A'+str(i)].value = sheet['C'+str(i+6)].value
+for i in range(2,79):
+    sheet_out['A'+str(i)].value = sheet['C'+str(i+7)].value
 
 wb_out.save("output_data.xlsx")
